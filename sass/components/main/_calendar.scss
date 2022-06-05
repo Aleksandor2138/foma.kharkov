@@ -1,0 +1,48 @@
+.calendar {
+    padding: 40px 0;
+}
+.calendar__heder{
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    font-weight: 800;
+    position: relative;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #333333;
+    @media screen and (min-width: 1200px){
+    font-size: 40px;
+    letter-spacing: 3.5px; }
+}
+.calendar__par {
+    z-index: 0;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgb(119, 119, 119);
+    margin-bottom: 15px;
+    @media screen and (min-width: 480px){
+        font-size: 20px;}
+    @media screen and (min-width: 768px) {
+        text-align: center;}
+}
+.calendar__link {
+    color: #777777;
+}
+.calendar__img{
+    margin: 0 auto;
+    object-fit: cover;
+    max-width: 290px;
+    max-height: 290px;
+    @media screen and (min-width: 480px){
+        max-width: 450px;
+        max-height: 450px;}
+    @media screen and (min-width: 768px) {
+        max-width: 738px;
+        max-height: 738px;}
+    @media screen and (min-width: 1200px){
+        max-width: 1170px;
+        max-height:  1170px;}
+}
