@@ -1,8 +1,104 @@
 .menu-open-btn{
     margin-left: auto;
+    background: #ffffff;
+    border: none;
+    &:hover,
+    &:focus {
+        fill: #2196F3;}
     @media screen and (min-width: 1200px) {
         display: none;}
 }
 .mob-menu{
-    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 0px;
+    margin: 0 auto;
+    overflow: auto;
+    @media screen and (min-width: 768px){
+        width: 50vw;
+        right: 0;}
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        align-items: flex-start;}
+    @media screen and (min-width: 1200px) {
+        display: none;}
+}
+.menu-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: #ffffff;
+    border: none;
+    &:hover,
+    &:focus {
+        fill: #2196F3;}
+}
+.mob-nav__item {
+    &:hover,
+    &:focus {
+        color: #2196F3;}
+    &:not(last-child){
+        margin-bottom: 32px;}
+}
+.mob-nav__link{
+    @include text-style ($fs:40px, $lh:1.175, $col:#333333cc  );
+    &:hover,
+    &:focus {
+        color: #2196F3;}
+}
+.mob-bottom {
+    padding-bottom: 10px;
+}
+.mob-contaсt-list{
+    margin-bottom: 64px;
+}
+.mob-contaсt__item{
+    &:not(last-child){
+        margin-bottom: 32px;}
+}
+.mob-contaсt__tel {
+    @include text-style ($fs:30px, $lh:1.175, $col:#333333cc );
+    margin-bottom: 32px;
+    @media screen and (min-width: 380px) {@include text-style ($fs:34px, $lh:1.175, $col:#2196F3 );}
+}
+.mob-contaсt__email{
+    @include text-style ($fs:24px, $lh:1.165, $col:#333333cc ); 
+    &:hover,
+    &:focus {
+        color: #2196F3;}
+}
+.mob-soc-list{
+    display: flex;
+    margin-left:-10px;
+        
+}
+.mob-soc__item{
+&:not(last-child) {
+    padding-right: 10px;
+    margin-left: 10px;
+    border-right:1px  solid rgba(33, 33, 33, 0.2);
+    }
+    &:nth-child(4) {
+        border: none;
+    }
+}
+.mob-soc__link{
+    @include text-style ($fs:14px, $lh:1.22, $col:#2196F3 );
+    @media screen and (min-width: 380px){@include text-style ($fs:18px, $lh:1.22, $col:#2196F3)}
+}
+.no-scroll{
+    overflow: hidden;
+}
+.is-hidden {
+opacity: 0;
+pointer-events: none;
+visibility: hidden;
 }
