@@ -1,0 +1,40 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    color: #333333;
+}
+
+:root {
+    --section-color-footer: #2f303a;
+    --section-color-white: #ffffff;
+    --section-color-grey: #f8f9f9;
+}
+
+img {
+    display: block;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    padding-left: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+.link {
+    text-decoration: none;
+}
+.list {
+    list-style: none;
+}
