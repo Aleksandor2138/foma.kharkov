@@ -560,11 +560,22 @@ button {
   }
 }
 
+.activity__link {
+  display: flex;
+  flex-direction: column;
+}
+
 .activity__title {
   font-size: 16px;
   color: #333333;
-  text-align: center;
   margin: 10px 0;
+  text-align: center;
+  flex-grow: 1;
+}
+@media screen and (min-width: 1200px) {
+  .activity__title {
+    height: 37px;
+  }
 }
 
 .activity__overlay {
@@ -593,6 +604,15 @@ button {
 }
 .activity__item:hover .activity__par {
   transform: translatey(0%);
+}
+
+.video {
+  padding: 40px 0;
+}
+@media screen and (min-width: 1200px) {
+  .video {
+    padding: 60px 0;
+  }
 }
 
 .footer {
