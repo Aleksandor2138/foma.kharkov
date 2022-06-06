@@ -415,11 +415,32 @@ button {
   margin: 10px 0;
 }
 
+.about__overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.about__img {
+  margin: 0 auto;
+}
+
 .about__par {
-  margin: 0 10px 10px 10px;
   font-size: 14px;
-  color: #777777;
+  color: #ffffff;
   text-align: justify;
+  position: absolute;
+  top: 0%;
+  height: 100%;
+  background-color: rgba(255, 216, 167, 0.9);
+  padding: 24px 24px;
+  overflow: auto;
+  transform: translatey(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier 0.4, 0, 0.2, 1;
+}
+.about__item:hover .about__par {
+  transform: translatey(0%);
 }
 
 .calendar {
