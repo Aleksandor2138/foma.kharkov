@@ -615,6 +615,30 @@ button {
   }
 }
 
+.video-link {
+  margin: 0 auto;
+  width: 290px;
+  height: 180px;
+}
+@media screen and (min-width: 480px) {
+  .video-link {
+    width: 450px;
+    height: 250px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .video-link {
+    width: 738px;
+    height: 415px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .video-link {
+    width: 1170px;
+    height: 660px;
+  }
+}
+
 .footer {
   padding: 60px 0;
   background-color: var(--section-color-footer);

@@ -3,3 +3,17 @@
     @media screen and (min-width: 1200px){
         padding: 60px 0;}
 }
+.video-link {
+    margin: 0 auto;
+    width: 290px;
+    height: 180px;
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        height: 250px;}
+    @media screen and (min-width: 768px) {
+        width: 738px;
+        height: 415px;}
+    @media screen and (min-width: 1200px){
+        width: 1170px;
+        height: 660px;}
+}
