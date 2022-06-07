@@ -5,6 +5,9 @@
 }
 .video-link {
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    
     width: 290px;
     height: 180px;
     @media screen and (min-width: 480px) {
