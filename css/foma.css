@@ -80,7 +80,7 @@ button {
 
 .header {
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   background-color: var(--section-color-white);
   padding: 20px 0;
   width: 100%;
@@ -314,22 +314,49 @@ button {
   fill: #ffffff;
 }
 
-.hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/fon-foma.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 300px 0;
+.hero .container {
+  padding: 0;
+}
+
+.hero__item {
+  position: relative;
+}
+
+.hero__img {
+  width: 320px;
+  min-height: 484px;
+}
+@media screen and (min-width: 480px) {
+  .hero__img {
+    width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
-  .hero {
-    padding: 280px 0;
+  .hero__img {
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero {
-    padding: 265px 0;
+  .hero__img {
+    width: 1200px;
+    min-height: 1042px;
   }
+}
+.hero__img:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(47, 48, 58, 0.4);
+  z-index: 11;
+}
+
+.hero__absolut {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hero__text {

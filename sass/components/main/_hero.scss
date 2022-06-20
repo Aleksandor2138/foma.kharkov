@@ -1,18 +1,78 @@
 .hero {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-    ),
-    url(../img/fon-foma.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 300px 0;
-    @media screen and (min-width: 768px){
-        padding: 280px 0;}
-    @media screen and (min-width: 1200px){
-        padding: 265px 0;}
+.container{ padding: 0;}
 }
+.hero__item {
+    // &:nth-child(1){
+    //     background-image: linear-gradient(
+    //         rgba(47, 48, 58, 0.4),
+    //         rgba(47, 48, 58, 0.4)
+    //     ),
+    //     url(../img/fon-foma.jpg);
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    //     background-size: cover;}
+    // &:nth-child(2){
+    //     background-image: linear-gradient(
+    //         rgba(47, 48, 58, 0.4),
+    //         rgba(47, 48, 58, 0.4)
+    //     ),
+    //     url(../img/fon-foma2.jpg);
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    //     background-size: cover;}
+    // &:nth-child(3){
+    //     background-image: linear-gradient(
+    //         rgba(47, 48, 58, 0.4),
+    //         rgba(47, 48, 58, 0.4)
+    //     ),
+    //     url(../img/fon-foma.jpg);
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    //     background-size: cover;}
+    // &:nth-child(4){
+    //     background-image: linear-gradient(
+    //         rgba(47, 48, 58, 0.4),
+    //         rgba(47, 48, 58, 0.4)
+    //     ),
+    //     url(../img/fon-foma2.jpg);
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    //     background-size: cover;}
+    position: relative;
+    // padding: 300px 0;
+    // @media screen and (min-width: 768px){
+    //     padding: 280px 0;}
+    // @media screen and (min-width: 1200px){
+    //     padding: 265px 0;}
+}
+.hero__img {
+    width: 320px;
+    min-height: 484px;
+    @media screen and (min-width: 480px){
+        width: 480px;}
+    @media screen and (min-width: 768px){
+        width: 768px;}
+    @media screen and (min-width: 1200px){
+        width: 1200px;
+        min-height: 1042px;}
+    &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(47, 48, 58, 0.4) ;
+        z-index: 11;
+    }
+}
+
+.hero__absolut{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
 .hero__text {
     color: rgba(255, 255, 255, 0.80);
     font-size: 35px;
