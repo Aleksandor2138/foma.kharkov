@@ -292,8 +292,8 @@ button {
 }
 
 .soc__link {
-  width: 44px;
-  height: 44px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   background-color: #ffffff;
   display: flex;
@@ -713,9 +713,16 @@ button {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+  fill: rgba(255, 255, 255, 0.6);
+  display: flex;
 }
 .contaсt__link--color {
   color: #ffffff;
+  fill: #ffffff;
+}
+
+.contaсt__icon {
+  margin-right: 10px;
 }
 
 .footer-soc-text {

@@ -32,8 +32,14 @@
 .contaсt__link {
     @include text-style($fw:400, $lh:1.71, $ls:0.03em, $col:#ffffff99);
     font-style: normal;
+    fill: #ffffff99;
+    display: flex;
     &--color {
-    color: #ffffff;}
+    color: #ffffff;
+    fill: #ffffff;}
+}
+.contaсt__icon {
+    margin-right: 10px;
 }
 .footer-soc-text {
     @include text-style($fw:700, $ls:0.03em, $col:#ffffff);
