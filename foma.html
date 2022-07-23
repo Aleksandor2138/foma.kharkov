@@ -17,15 +17,13 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
     />
-    <link
-        rel="stylesheet"
-        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
-    <link
+    <!-- <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  /> -->
     <link rel="stylesheet" href="./css/foma.min.css" />
+    <link type="image/x-icon" href="/img/favicon.png" rel="shortcut icon"/>
+    <link type="Image/x-icon" href="/img/favicon.png" rel="icon" />
     <title>Foma</title>
 </head>
 <body>
@@ -70,8 +68,8 @@
                             <li class="mob-nav__item"><a class="mob-nav__link link" href="./foma.html#contacts">Контакты</a></li>
                         </ul>
                     </nav>
-                    <div class="mob-bottom">
-                        <ul class="mob-contaсt-list list">
+                    <div class="mob-contact-bottom">
+                        <ul class="mob-contaсt__list list">
                             <li class="mob-contaсt__item">
                             <a class="mob-contaсt__tel link" 
                                 href="tel:+380671910010">+38 067 19 100 10</a>
@@ -107,148 +105,46 @@
     <!-- main -->
     <main class="main">
         <!-- hero -->
-        <section class="hero itcss">
-            <div class="container swiper slider-card itcss__wrapper">
-                <ul class="hero-list list swiper-wrapper itcss__items">
-                    <li class="hero__item swiper-slide itcss__item">
-                        <img class="hero__img" src="./img/fon-foma.jpg" alt="fon">
-                        <div class="hero__absolut">
-                            <p class="hero__text animate__animated animate__flipInX">Коворкинг</p>
-                            <ul class="soc-list list">
-                                <li class="soc__item">
-                                    <a href="https://t.me/foma_kharkov_ua" class="soc__link soc__link--fill"
-                                    ><svg class="soc__icon" width="30" height="30">
-                                        <use href="./img/icons.svg#icon-telegram"></use>
-                                    </svg>
-                                    </a>
-                                </li>
-                                <li class="soc__item">
-                                    <a href="https://www.facebook.com/fomakharkov/" class="soc__link soc__link--fill"
-                                    ><svg class="soc__icon" width="30" height="30">
-                                        <use href="./img/icons.svg#icon-facebook"></use>
-                                    </svg>
-                                    </a>
-                                </li>
-                                <li class="soc__item">
-                                    <a href="https://www.youtube.com/channel/UCA_32A5iv1FfTkYNzfB-J1Q/featured" class="soc__link soc__link--fill"
-                                    ><svg class="soc__icon" width="30" height="30">
-                                        <use href="./img/icons.svg#icon-youtube"></use></svg
-                                    ></a>
-                                </li>
-                                <li class="soc__item">
-                                    <a href="https://instagram.com/foma_kharkov_ua?igshid=YmMyMTA2M2Y=" class="soc__link soc__link--fill"
-                                    ><svg class="soc__icon" width="30" height="30">
-                                        <use href="./img/icons.svg#icon-instagram"></use></svg
-                                    ></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="hero__item swiper-slide">
-                        <img class="hero__img" src="./img/fon-foma2.jpg" alt="fon">
-                        <div class="hero__absolut">
-                            <p class="hero__text animate__animated animate__flipInX">Лекторий</p>
-                            <ul class="soc-list list">
-                                <li class="soc__item">
-                                    <a href="https://t.me/foma_kharkov_ua" class="soc__link soc__link--fill"
-                                    ><svg class="soc__icon" width="30" height="30">
-                                        <use href="./img/icons.svg#icon-telegram"></use>
-                                    </svg>
-                                    </a>
-                                </li>
-                                <li class="soc__item">
-                                    <a href="https://www.facebook.com/fomakharkov/" class="soc__link soc__link--fill"
-                                    ><svg class="soc__icon" width="30" height="30">
-                                        <use href="./img/icons.svg#icon-facebook"></use>
-                                    </svg>
-                                    </a>
-                                </li>
-                                <li class="soc__item">
-                                    <a href="https://www.youtube.com/channel/UCA_32A5iv1FfTkYNzfB-J1Q/featured" class="soc__link soc__link--fill"
-                                    ><svg class="soc__icon" width="30" height="30">
-                                        <use href="./img/icons.svg#icon-youtube"></use></svg
-                                    ></a>
-                                </li>
-                                <li class="soc__item">
-                                    <a href="https://instagram.com/foma_kharkov_ua?igshid=YmMyMTA2M2Y=" class="soc__link soc__link--fill"
-                                    ><svg class="soc__icon" width="30" height="30">
-                                        <use href="./img/icons.svg#icon-instagram"></use></svg
-                                    ></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="hero__item swiper-slide">
-                        <img class="hero__img" src="./img/fon-foma.jpg" alt="fon">
-                        <div class="hero__absolut">
-                            <p class="hero__text animate__animated animate__flipInX">Антикафе</p>
-                            <ul class="soc-list list">
-                                <li class="soc__item">
-                                    <a href="https://t.me/foma_kharkov_ua" class="soc__link soc__link--fill"
-                                    ><svg class="soc__icon" width="30" height="30">
-                                        <use href="./img/icons.svg#icon-telegram"></use>
-                                    </svg>
-                                    </a>
-                                </li>
-                                <li class="soc__item">
-                                    <a href="https://www.facebook.com/fomakharkov/" class="soc__link soc__link--fill"
-                                    ><svg class="soc__icon" width="30" height="30">
-                                        <use href="./img/icons.svg#icon-facebook"></use>
-                                    </svg>
-                                    </a>
-                                </li>
-                                <li class="soc__item">
-                                    <a href="https://www.youtube.com/channel/UCA_32A5iv1FfTkYNzfB-J1Q/featured" class="soc__link soc__link--fill"
-                                    ><svg class="soc__icon" width="30" height="30">
-                                        <use href="./img/icons.svg#icon-youtube"></use></svg
-                                    ></a>
-                                </li>
-                                <li class="soc__item">
-                                    <a href="https://instagram.com/foma_kharkov_ua?igshid=YmMyMTA2M2Y=" class="soc__link soc__link--fill"
-                                    ><svg class="soc__icon" width="30" height="30">
-                                        <use href="./img/icons.svg#icon-instagram"></use></svg
-                                    ></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="hero__item swiper-slide">
-                        <img class="hero__img" src="./img/fon-foma2.jpg" alt="fon">
-                        <div class="hero__absolut">
-                            <p class="hero__text animate__animated animate__flipInX">Концертный зал</p>
-                            <ul class="soc-list list">
-                                <li class="soc__item">
-                                    <a href="https://t.me/foma_kharkov_ua" class="soc__link soc__link--fill"
-                                    ><svg class="soc__icon" width="30" height="30">
-                                        <use href="./img/icons.svg#icon-telegram"></use>
-                                    </svg>
-                                    </a>
-                                </li>
-                                <li class="soc__item">
-                                    <a href="https://www.facebook.com/fomakharkov/" class="soc__link soc__link--fill"
-                                    ><svg class="soc__icon" width="30" height="30">
-                                        <use href="./img/icons.svg#icon-facebook"></use>
-                                    </svg>
-                                    </a>
-                                </li>
-                                <li class="soc__item">
-                                    <a href="https://www.youtube.com/channel/UCA_32A5iv1FfTkYNzfB-J1Q/featured" class="soc__link soc__link--fill"
-                                    ><svg class="soc__icon" width="30" height="30">
-                                        <use href="./img/icons.svg#icon-youtube"></use></svg
-                                    ></a>
-                                </li>
-                                <li class="soc__item">
-                                    <a href="https://instagram.com/foma_kharkov_ua?igshid=YmMyMTA2M2Y=" class="soc__link soc__link--fill"
-                                    ><svg class="soc__icon" width="30" height="30">
-                                        <use href="./img/icons.svg#icon-instagram"></use></svg
-                                    ></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
+        <secton class="hero">
+            <div class="container">
+                <ul class="hero-slaides">
+                    <li><p class="flipin-x">Коворкинг</p></li>
+                    <li><p class="flipin-x">Лекторий</p></li>
+                    <li><p class="flipin-x">Антикафе</p></li>
+                    <li><p class="flipin-x">Концертный зал</p></li>
                 </ul>
+                <div class="hero-content">
+                    <ul class="hero__soc soc-list list">
+                        <li class="soc__item">
+                            <a href="https://t.me/foma_kharkov_ua" class="soc__link soc__link--fill"
+                            ><svg class="soc__icon" width="30" height="30">
+                                <use href="./img/icons.svg#icon-telegram"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="soc__item">
+                            <a href="https://www.facebook.com/fomakharkov/" class="soc__link soc__link--fill"
+                            ><svg class="soc__icon" width="30" height="30">
+                                <use href="./img/icons.svg#icon-facebook"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="soc__item">
+                            <a href="https://www.youtube.com/channel/UCA_32A5iv1FfTkYNzfB-J1Q/featured" class="soc__link soc__link--fill"
+                            ><svg class="soc__icon" width="30" height="30">
+                                <use href="./img/icons.svg#icon-youtube"></use></svg
+                            ></a>
+                        </li>
+                        <li class="soc__item">
+                            <a href="https://instagram.com/foma_kharkov_ua?igshid=YmMyMTA2M2Y=" class="soc__link soc__link--fill"
+                            ><svg class="soc__icon" width="30" height="30">
+                                <use href="./img/icons.svg#icon-instagram"></use></svg
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </section>
+        </secton>
         <!-- about -->
         <section class="about" id="about">
             <div class="container">
@@ -256,58 +152,42 @@
                 <ul class="about-list list">
                     <li class="about__item">
                         <a class="about__link link" href="">
-                            <h2 class="about__title">Коворкинг</h2>
-                            <div class="about__overlay">
-                                <picture>
-                                    <source srcset="./img/about/coworking-des-min.jpg" media="(min-width:1200px )"/>
-                                    <source srcset="./img/about/coworking-tab-min.jpg" media="(min-width:768px )"/>
-                                    <source srcset="./img/about/coworking-mob-min.jpg" media="(min-width:480px )"/>
-                                    <img class="about__img" src="./img/about/coworking-min.jpg" alt="Коворкинг">
-                                </picture>
-                                <p class="about__par">Используйте наше пространство для работы или отдыха. Места оборудованы подключением 220V. Вкусный чай и ароматный кофе, книги и журналы для отдыха и творческого вдохновения.</p>
+                            <div class="about__border-icon">
+                                <svg class="about__icon" >
+                                <use href="./img/icons.svg#icon-desktop"></use></svg>
                             </div>
+                                <h2 class="about__title">Коворкинг</h2>
+                            <p class="about__par">Используйте наше пространство для работы или отдыха. Места оборудованы подключением 220V. Вкусный чай и ароматный кофе, книги и журналы для отдыха и творческого вдохновения.</p>
                         </a>
                     </li>
                     <li class="about__item">
                         <a class="about__link link" href="">
-                        <h2 class="about__title">Лекторий</h2>
-                        <div class="about__overlay">
-                            <picture>
-                                <source srcset="./img/about/lecture-des-min.jpg" media="(min-width:1200px )"/>
-                                <source srcset="./img/about/lecture-tab-min.jpg" media="(min-width:768px )"/>
-                                <source srcset="./img/about/lecture-mob-min.jpg" media="(min-width:480px )"/>
-                                <img class="about__img" src="./img/about/lecture-min.jpg" alt="Коворкинг">
-                            </picture>
+                            <div class="about__border-icon">
+                                <svg class="about__icon" >
+                                <use href="./img/icons.svg#icon-lecture"></use></svg>
+                            </div>
+                            <h2 class="about__title">Лекторий</h2>
                             <p class="about__par">Мы используем и предлагаем Вам наше пространство для обучающих лекций, мастер-классов, бесед. Разработаны программы встреч для групп школьников и студентов по предварительной записи.</p>
-                        </div>
                         </a>
                     </li>
                     <li class="about__item">
                         <a class="about__link link" href="">
-                        <h2 class="about__title">Досуг</h2>
-                        <div class="about__overlay">
-                            <picture>
-                                <source srcset="./img/about/leisure-des-min.jpg" media="(min-width:1200px )"/>
-                                <source srcset="./img/about/leisure-tab-min.jpg" media="(min-width:768px )"/>
-                                <source srcset="./img/about/leisure-mob-min.jpg" media="(min-width:480px )"/>
-                                <img class="about__img" src="./img/about/leisure-min.jpg" alt="Коворкинг">
-                            </picture>
+                            <div class="about__border-icon">
+                                <svg class="about__icon" >
+                                <use href="./img/icons.svg#icon-castle"></use></svg>
+                            </div>
+                            <h2 class="about__title">Досуг</h2>
                             <p class="about__par">У нас можно хорошей детской или молодежной компанией поиграть в добрые настольные игры. Или предложить и организовать свой вариант доброго интересного досуга.</p>
-                        </div>
                         </a>
                     </li>
                     <li class="about__item">
                         <a class="about__link link" href="">
-                        <h2 class="about__title">Мероприятия</h2>
-                        <div class="about__overlay">
-                            <picture>
-                                <source srcset="./img/about/event-des-min.jpg" media="(min-width:1200px )"/>
-                                <source srcset="./img/about/event-tab-min.jpg" media="(min-width:768px )"/>
-                                <source srcset="./img/about/event-mob-min.jpg" media="(min-width:480px )"/>
-                                <img class="about__img" src="./img/about/event-min.jpg" alt="Коворкинг">
-                            </picture>
+                            <div class="about__border-icon">
+                                <svg class="about__icon" >
+                                <use href="./img/icons.svg#icon-calendar"></use></svg>
+                            </div>
+                            <h2 class="about__title">Мероприятия</h2>
                             <p class="about__par">У нас множество своих встреч и событий. Они — всегда для Вас в календаре. Но мы готовы помочь провести и Ваше мероприятие!</p>
-                        </div>
                         </a>
                     </li>
                 </ul>
@@ -452,9 +332,9 @@
                 </ul>
             </div>
         </div>
+        <p class="copyright">Copyright © 2022. Created by Alexandr Pavlenko.</p>
     </footer>
     <script src="./js/menu-mobile.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/hero.js"></script>
 </body>
 </html>
