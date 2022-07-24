@@ -342,6 +342,7 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow: hidden;
 }
 .hero-slaides li {
   width: 100%;
@@ -428,7 +429,117 @@ button {
 .hero__soc {
   margin-top: 550px;
 }
+.hero__soc li {
+  animation: fade 5000ms linear infinite 0ms both;
+  backface-visibility: visible !important;
+  opacity: 0;
+}
 
+.flip-x {
+  animation: flipX 5000ms linear infinite 0ms both;
+  backface-visibility: visible !important;
+  opacity: 0;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes flipX {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  18% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+  22% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+  26% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+  30% {
+    transform: perspective(400px);
+  }
+  70% {
+    transform: perspective(400px);
+  }
+  77% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    opacity: 1;
+  }
+  88% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -90deg);
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  18% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+  22% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+  26% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+  30% {
+    transform: perspective(400px);
+  }
+  70% {
+    transform: perspective(400px);
+  }
+  77% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    opacity: 1;
+  }
+  88% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -90deg);
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .about {
   padding: 40px 0;
   background-color: var(--section-color-grey);
