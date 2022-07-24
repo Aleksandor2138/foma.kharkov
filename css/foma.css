@@ -448,10 +448,13 @@ button {
 
 .about-list {
   margin-bottom: -30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .about-list {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     margin-left: -30px;
   }
@@ -614,10 +617,13 @@ button {
 
 .activity-list {
   margin: 0 auto -30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .activity-list {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     margin-left: -30px;
   }

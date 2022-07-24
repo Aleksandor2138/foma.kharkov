@@ -6,8 +6,11 @@
 }
 .activity-list {
     margin: 0 auto -30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     @media screen and (min-width: 768px) {
-        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         margin-left: -30px;}
     @media screen and (min-width: 1200px){
