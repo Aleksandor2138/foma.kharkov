@@ -18,11 +18,11 @@
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-  background-color: #fff5e1;
-  fill: #333333;
-}
+    &:hover,
+    &:focus {
+    background-color: #fff5e1;
+    fill: #333333;
+  }
 }
 .soc__link--fill {
   background-color: rgba(255, 255, 255, 0.1);

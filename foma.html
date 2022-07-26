@@ -17,14 +17,10 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
     />
-    <!-- <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  /> -->
     <link rel="stylesheet" href="./css/foma.min.css" />
     <link type="image/x-icon" href="/img/favicon.png" rel="shortcut icon"/>
     <link type="Image/x-icon" href="/img/favicon.png" rel="icon" />
-    <title>Foma</title>
+    <title>Фома-центр - Мероприятия. Встречи. Коворкинг. Досуг.</title>
 </head>
 <body>
     <!--header  -->
@@ -35,14 +31,14 @@
             </a> 
             <nav class="nav">
                 <ul class="nav-list list">
-                    <li class="nav__item"><a class="nav__link link" href="./foma.html#about">О нас</a></li>
-                    <li class="nav__item"><a class="nav__link link" href="./foma.html#calendar">Календарь</a></li>
-                    <li class="nav__item"><a class="nav__link link" href="./foma.html#activity">Деятельность</a></li>
+                    <li class="nav__item"><a class="nav__link link" href="#about">О нас</a></li>
+                    <li class="nav__item"><a class="nav__link link" href="#calendar">Календарь</a></li>
+                    <li class="nav__item"><a class="nav__link link" href="#activity">Деятельность</a></li>
                     <li class="nav__item"><a class="nav__link link" href="">Коворкинг</a></li>
-                    <li class="nav__item"><a class="nav__link link" href="./foma.html#video">Видео</a></li>
-                    <li class="nav__item"><a class="nav__link link" href="">Галерея</a></li>
+                    <li class="nav__item"><a class="nav__link link" href="#video">Видео</a></li>
+                    <li class="nav__item"><a class="nav__link link" href="#gallery">Галерея</a></li>
                     <li class="nav__item"><a class="nav__link link" href="">Поддержать нас</a></li>
-                    <li class="nav__item"><a class="nav__link link" href="./foma.html#contacts">Контакты</a></li>
+                    <li class="nav__item"><a class="nav__link link" href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
             <button class="menu-open-btn" type="button">
@@ -51,21 +47,21 @@
             </button>
             <!--mob-menu  -->
             <div class="mob-menu is-hidden">
-                <div class="container">
-                    <button   class="menu-close-btn" type="button">
+                <div class="container menu-close">
+                    <button  class="menu-close-btn"  type="button">
                         <svg class="menu-close-icon" width="24" height="24">
                         <use href="./img/icons.svg#icon-close_40px"></use></svg>
                     </button>
                     <nav class="mob-nav">
                         <ul class="mob-nav-list list">
-                            <li class="mob-nav__item"><a class="mob-nav__link link" href="./foma.html#about">О нас</a></li>
-                            <li class="mob-nav__item"><a class="mob-nav__link link" href="./foma.html#calendar">Календарь</a></li>
-                            <li class="mob-nav__item"><a class="mob-nav__link link" href="./foma.html#activity">Деятельность</a></li>
+                            <li class="mob-nav__item"><a class="mob-nav__link link" href="#about">О нас</a></li>
+                            <li class="mob-nav__item"><a class="mob-nav__link link" href="#calendar">Календарь</a></li>
+                            <li class="mob-nav__item"><a class="mob-nav__link link" href="#activity">Деятельность</a></li>
                             <li class="mob-nav__item"><a class="mob-nav__link link" href="">Коворкинг</a></li>
-                            <li class="mob-nav__item"><a class="mob-nav__link link" href="./foma.html#video">Видео</a></li>
-                            <li class="mob-nav__item"><a class="mob-nav__link link" href="">Галерея</a></li>
+                            <li class="mob-nav__item"><a class="mob-nav__link link" href="#video">Видео</a></li>
+                            <li class="mob-nav__item"><a class="mob-nav__link link" href="#gallery">Галерея</a></li>
                             <li class="mob-nav__item"><a class="mob-nav__link link" href="">Поддержать Нас</a></li>
-                            <li class="mob-nav__item"><a class="mob-nav__link link" href="./foma.html#contacts">Контакты</a></li>
+                            <li class="mob-nav__item"><a class="mob-nav__link link" href="#contacts">Контакты</a></li>
                         </ul>
                     </nav>
                     <div class="mob-contact-bottom">
@@ -101,6 +97,11 @@
                 </div>
             </div>
         </div>
+        <button class="top-btn" onclick="topFunction()"  id="myBtn" title="Go to top">
+            <svg class="top__svg">
+                <use href="./img/icons.svg#icon-topUp"></use>
+            </svg>
+        </button>
     </header>
     <!-- main -->
     <main class="main">
@@ -210,10 +211,10 @@
                             <h2 class="activity__title">Сурдоперевод в Церкви</h2>
                             <div class="activity__overlay">
                                 <picture>
-                                    <source srcset="./img/about/coworking-des-min.jpg" media="(min-width:1200px )"/>
-                                    <source srcset="./img/about/coworking-tab-min.jpg" media="(min-width:768px )"/>
-                                    <source srcset="./img/about/coworking-mob-min.jpg" media="(min-width:480px )"/>
-                                    <img class="activity__img" src="./img/about/coworking-min.jpg" alt="Коворкинг">
+                                    <source srcset="./img/activity/deaf-desk.jpg" media="(min-width:1280px )"/>
+                                    <source srcset="./img/activity/deaf-tab.jpg" media="(min-width:768px )"/>
+                                    <source srcset="./img/activity/deaf-mob.jpg" media="(min-width:480px )"/>
+                                    <img class="activity__img" src="./img/activity/deaf.jpg" alt="Cурдоперевод">
                                 </picture>
                                 <p class="activity__par">В Благовещенском соборе Харькова есть община глухих, для которых совершается служба с сурдопереводом. О. Сергий Веклич владеет жестовым языком и может помочь неслышащим людям.</p>
                             </div>
@@ -224,10 +225,10 @@
                             <h2 class="activity__title">Организация экскурсий</h2>
                             <div class="activity__overlay">
                                 <picture>
-                                    <source srcset="./img/activity/excursion-des-min.jpg" media="(min-width:1200px )"/>
-                                    <source srcset="./img/activity/excursion-tab-min.jpg"  media="(min-width:768px )"/>
-                                    <source srcset="./img/activity/excursion-mob-min.jpg"  media="(min-width:480px )"/>
-                                    <img class="activity__img" src="./img/activity/excursion-min.jpg"  alt="Коворкинг">
+                                    <source srcset="./img/activity/excursion-des.jpg" media="(min-width:1280px )"/>
+                                    <source srcset="./img/activity/excursion-tab.jpg"  media="(min-width:768px )"/>
+                                    <source srcset="./img/activity/excursion-mob.jpg"  media="(min-width:480px )"/>
+                                    <img class="activity__img" src="./img/activity/excursion.jpg"  alt="Экскурсии">
                                 </picture>
                                 <p class="activity__par">Мы готовы организовать для вашей группы экскурсии по центральным храмам Харькова, по епархиальному Церковно-историческому музею, а также виртуальную фото-экскурсию в Старый Харьков. </p>
                             </div>
@@ -238,10 +239,10 @@
                             <h2 class="activity__title">Богословско-педагогические курсы</h2>
                             <div class="activity__overlay">
                                 <picture>
-                                    <source srcset="./img/about/coworking-des-min.jpg" media="(min-width:1200px )"/>
-                                    <source srcset="./img/about/coworking-tab-min.jpg" media="(min-width:768px )"/>
-                                    <source srcset="./img/about/coworking-mob-min.jpg" media="(min-width:480px )"/>
-                                    <img class="activity__img" src="./img/about/coworking-min.jpg" alt="Коворкинг">
+                                    <source srcset="./img/activity/theologian-desk.jpg" media="(min-width:1280px )"/>
+                                    <source srcset="./img/activity/theologian-tab.jpg" media="(min-width:768px )"/>
+                                    <source srcset="./img/activity/theologian-mob.jpg" media="(min-width:480px )"/>
+                                    <img class="activity__img" src="./img/activity/theologian.jpg" alt="Богословские курсы">
                                 </picture>
                                 <p class="activity__par">В нашем центре действуют Богословско-педагогические курсы. По понедельникам и средам проходят лекции катехизаторского направления — изучение Библии, православного вероучения, церковной истории и богослужения. По пятницам — лекции, ориентированные на педагогику. Вы можете прийти вольнослушателем на интересующую Вас лекцию или поступить на весь учебный цикл.</p>
                             </div>
@@ -252,10 +253,10 @@
                             <h2 class="activity__title">Беседы с батюшкой</h2>
                             <div class="activity__overlay">
                                 <picture>
-                                    <source srcset="./img/about/coworking-des-min.jpg" media="(min-width:1200px )"/>
-                                    <source srcset="./img/about/coworking-tab-min.jpg" media="(min-width:768px )"/>
-                                    <source srcset="./img/about/coworking-mob-min.jpg" media="(min-width:480px )"/>
-                                    <img class="activity__img" src="./img/about/coworking-min.jpg" alt="Коворкинг">
+                                    <source srcset="./img/activity/convers-desk.jpg" media="(min-width:1280px )"/>
+                                    <source srcset="./img/activity/convers-tab.jpg" media="(min-width:768px )"/>
+                                    <source srcset="./img/activity/convers-mob.jpg" media="(min-width:480px )"/>
+                                    <img class="activity__img" src="./img/activity/convers.jpg" alt="Буседы с батюшкой">
                                 </picture>
                                 <p class="activity__par">На каком году брака нужно венчаться? Зачем человеку крёстные родители на самом деле? Какое точное количество имён необходимо давать ребёнку при крещении? Беседы на эти и другие темы практической стороны церковной жизни регулярно проводятся в нашем просветительском центре.</p>
                             </div>
@@ -268,6 +269,102 @@
         <section class="video" id="video">
             <div class="container">
                 <iframe class="video-link"  src="https://www.youtube.com/embed/UQ8BHtmf-68" title="YouTube video player" ></iframe>
+            </div>
+        </section>
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <ul class="gallery__list list">
+                    <li class="gallery__item">
+                        <a data-fslightbox="gallery"  href="./img/gallery/gal/gal1.JPG" class="gallery__link link">
+                            <img src="./img/gallery/galMini/gal-min1.JPG" alt="галерея" class="gallery__img gallery__img--small">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a data-fslightbox="gallery"  href="./img/gallery/gal/gal2.JPG" class="gallery__link link">
+                            <img src="./img/gallery/galMini/gal-min2.JPG" alt="галерея" class="gallery__img">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a data-fslightbox="gallery"  href="./img/gallery/gal/gal3.JPG" class="gallery__link link">
+                            <img src="./img/gallery/galMini/gal-min3.JPG" alt="галерея" class="gallery__img ">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a data-fslightbox="gallery"  href="./img/gallery/gal/gal4.JPG" class="gallery__link link">
+                            <img src="./img/gallery/galMini/gal-min4.JPG" alt="галерея" class="gallery__img">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a data-fslightbox="gallery"  href="./img/gallery/gal/gal5.JPG" class="gallery__link link">
+                            <img src="./img/gallery/galMini/gal-min5.JPG" alt="галерея" class="gallery__img">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a data-fslightbox="gallery"  href="./img/gallery/gal/gal6.JPG" class="gallery__link link">
+                            <img src="./img/gallery/galMini/gal-min6.JPG" alt="галерея" class="gallery__img">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a data-fslightbox="gallery"  href="./img/gallery/gal/gal7.JPG" class="gallery__link link">
+                            <img src="./img/gallery/galMini/gal-min7.JPG" alt="галерея" class="gallery__img gallery__img--small">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a data-fslightbox="gallery"  href="./img/gallery/gal/gal8.JPG" class="gallery__link link">
+                            <img src="./img/gallery/galMini/gal-min8.JPG" alt="галерея" class="gallery__img gallery__img--small">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a data-fslightbox="gallery"  href="./img/gallery/gal/gal9.JPG" class="gallery__link link">
+                            <img src="./img/gallery/galMini/gal-min9.JPG" alt="галерея" class="gallery__img">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a data-fslightbox="gallery"  href="./img/gallery/gal/gal10.JPG" class="gallery__link link">
+                            <img src="./img/gallery/galMini/gal-min10.JPG" alt="галерея" class="gallery__img">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a data-fslightbox="gallery"  href="./img/gallery/gal/gal11.JPG" class="gallery__link link">
+                            <img src="./img/gallery/galMini/gal-min11.JPG" alt="галерея" class="gallery__img">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a data-fslightbox="gallery"  href="./img/gallery/gal/gal12.JPG" class="gallery__link link">
+                            <img src="./img/gallery/galMini/gal-min12.JPG" alt="галерея" class="gallery__img">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a data-fslightbox="gallery"  href="./img/gallery/gal/gal13.JPG" class="gallery__link link">
+                            <img src="./img/gallery/galMini/gal-min13.JPG" alt="галерея" class="gallery__img gallery__img--small">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a data-fslightbox="gallery"  href="./img/gallery/gal/gal14.JPG" class="gallery__link link">
+                            <img src="./img/gallery/galMini/gal-min14.JPG" alt="галерея" class="gallery__img">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a data-fslightbox="gallery"  href="./img/gallery/gal/gal15.JPG" class="gallery__link link">
+                            <img src="./img/gallery/galMini/gal-min15.JPG" alt="галерея" class="gallery__img gallery__img--small">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a data-fslightbox="gallery"  href="./img/gallery/gal/gal16.JPG" class="gallery__link link">
+                            <img src="./img/gallery/galMini/gal-min16.JPG" alt="галерея" class="gallery__img">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a data-fslightbox="gallery"  href="./img/gallery/gal/gal17.JPG" class="gallery__link link">
+                            <img src="./img/gallery/galMini/gal-min17.JPG" alt="галерея" class="gallery__img">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a data-fslightbox="gallery"  href="./img/gallery/gal/gal18.JPG" class="gallery__link link">
+                            <img src="./img/gallery/galMini/gal-min18.JPG" alt="галерея" class="gallery__img ">
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
@@ -334,7 +431,7 @@
         </div>
         <p class="copyright">Copyright © 2022. Created by Alexandr Pavlenko.</p>
     </footer>
-    <script src="./js/menu-mobile.js"></script>
-    <script src="./js/hero.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script src="./js/fslightbox-basic-3.3.1/fslightbox.js"></script>
 </body>
 </html>
