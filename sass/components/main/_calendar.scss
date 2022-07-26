@@ -1,48 +1,52 @@
 .calendar {
+    content-visibility: auto;
     padding: 40px 0;
-}
-.calendar__heder{
-    text-align: center;
-    font-size: 30px;
-    line-height: 1.2;
-    letter-spacing: 2px;
-    font-weight: 800;
-    position: relative;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    color: #333333;
-    @media screen and (min-width: 1200px){
-    font-size: 40px;
-    letter-spacing: 3.5px; }
-}
-.calendar__par {
-    z-index: 0;
-    text-align: justify;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    color: rgb(119, 119, 119);
-    margin-bottom: 15px;
-    @media screen and (min-width: 480px){
-        font-size: 20px;}
-    @media screen and (min-width: 768px) {
-        text-align: center;}
-}
-.calendar__link {
-    color: #777777;
-}
-.calendar__img{
-    margin: 0 auto;
-    object-fit: cover;
-    max-width: 290px;
-    max-height: 290px;
-    @media screen and (min-width: 480px){
-        max-width: 450px;
-        max-height: 450px;}
-    @media screen and (min-width: 768px) {
-        max-width: 738px;
-        max-height: 738px;}
-    @media screen and (min-width: 1200px){
-        max-width: 1170px;
-        max-height:  1170px;}
+    &__heder{
+        @include text-style($fw:800, $fs:30px, $lh:1.2, $col:#333333);
+        text-align: center;
+        position: relative;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        @include desktop {
+            @include text-style($fw:800, $fs:40px, $lh:1.2, $col:#333333); 
+        }
+    }
+    &__par {
+        @include text-style($fw:400, $lh:1.7); 
+        z-index: 0;
+        text-align: justify;
+        margin-bottom: 15px;
+        @include mobile {
+            @include text-style($fw:400, $fs:20px, $lh:1.7);
+            font-size: 20px;
+        }
+        @include tablet {
+            text-align: center;
+        }
+    }
+    &__link {
+        color: #777777;
+        transition-property: color, border;
+        transition: var(--main-transition);
+        &:focus,
+        &:hover {
+            color: #333333;
+            border-bottom: 1px solid #333333;
+        }
+    }
+    &__img{
+        margin: 0 auto;
+        object-fit: cover;
+        max-width: 290px;
+        max-height: 290px;
+        @include mobile {
+            max-width: 450px;
+            max-height: 450px;}
+        @include tablet {
+            max-width: 738px;
+            max-height: 738px;}
+        @include desktop {
+            max-width: 1170px;
+            max-height:  1170px;}
+    }
 }

@@ -11,6 +11,8 @@
     background-color: transparent;
     cursor: pointer;
     fill: #749bbf5e;
+    transition-property: fill;
+    transition: var(--main-transition);
     &:hover {
         fill: #749bbf;
     }

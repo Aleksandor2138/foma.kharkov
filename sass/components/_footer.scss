@@ -35,9 +35,18 @@
     font-style: normal;
     fill: #ffffff99;
     display: flex;
+    transition-property: color, fill, transform;
+    transition: var(--main-transition);
+    &:focus,
+    &:hover {
+        color: #ffffff;
+        fill: #ffffff;
+        transform: scale(1.1);
+    }
     &--color {
-    color: #ffffff;
-    fill: #ffffff;}
+        color: #ffffff;
+        fill: #ffffff;
+    }
 }
 .contaсt__icon {
     margin-right: 10px;

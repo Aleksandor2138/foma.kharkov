@@ -2,11 +2,14 @@
     margin-left: auto;
     background: #ffffff;
     border: none;
+    transition-property: fill;
+    transition: var(--main-transition);
     &:hover,
     &:focus {
         fill: #2196F3;}
-    @media screen and (min-width: 1200px) {
-        display: none;}
+    @include desktop {
+        display: none;
+    }
 }
 .mob-menu{
     position: fixed;
@@ -19,17 +22,20 @@
     padding: 48px 0px;
     margin: 0 auto;
     overflow: auto;
-    @media screen and (min-width: 768px){
+    @include tablet {
         width: 50%;
-        right: 0;}
+        right: 0;
+    }
     .container {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
-        align-items: flex-start;}
-    @media screen and (min-width: 1200px) {
-        display: none;}
+        align-items: flex-start;
+    }
+    @include desktop {
+        display: none;
+    }
 }
 .menu-close-btn {
     position: absolute;
@@ -37,11 +43,15 @@
     right: 15px;
     background: #ffffff;
     border: none;
+    transition-property: fill;
+    transition: var(--main-transition);
     &:hover,
     &:focus {
         fill: #2196F3;}
 }
 .mob-nav__item {
+    transition-property: color;
+    transition: var(--main-transition);
     &:hover,
     &:focus {
         color: #2196F3;}
@@ -50,6 +60,8 @@
 }
 .mob-nav__link{
     @include text-style ($fs:40px, $lh:1.175, $col:#333333cc  );
+    transition-property: color;
+    transition: var(--main-transition);
     &:hover,
     &:focus {
         color: #2196F3;}
@@ -71,6 +83,8 @@
 }
 .mob-contaсt__email{
     @include text-style ($fs:24px, $lh:1.165, $col:#333333cc ); 
+    transition-property: color;
+    transition: var(--main-transition);
     &:hover,
     &:focus {
         color: #2196F3;}

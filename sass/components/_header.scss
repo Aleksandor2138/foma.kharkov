@@ -16,25 +16,29 @@
 .nav {
     display: none;
     margin-left: auto;
-    @media screen and (min-width: 1200px){display: block;}
+    @include desktop {
+        display: block;
+    }
+    &-list {
+        display: flex;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-right: 34px;
+        }
+        
+    }
+    &__link {
+        font-family: "Raleway";
+        font-style: normal;
+        font-size: 14px;
+        color: #333333cc;
+        text-transform: uppercase;
+        transition-property: color;
+        transition: var(--main-transition);
+        &:hover,
+        &:focus {
+            color: #7777778f;
+        }
+    }
 }
-.nav-list {
-    display: flex;
-}
-.nav__item {
-    &:not(:last-child) {
-        margin-right: 34px;}
-    
-}
-.nav__link {
-    font-family: "Raleway";
-    font-style: normal;
-    font-size: 14px;
-    color: #333333cc;
-    text-transform: uppercase;
-    &:hover,
-    &:focus {
-        color: #7777778f;}
-}
-
-
