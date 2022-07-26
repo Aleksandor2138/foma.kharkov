@@ -736,7 +736,6 @@ button {
 }
 
 .calendar {
-  content-visibility: auto;
   padding: 40px 0;
 }
 .calendar__heder {
@@ -819,7 +818,6 @@ button {
 }
 
 .activity {
-  content-visibility: auto;
   padding: 40px 0;
   background-color: var(--section-color-grey);
 }
@@ -911,7 +909,6 @@ button {
 }
 
 .video {
-  content-visibility: auto;
   padding: 40px 0;
 }
 @media screen and (min-width: 1280px) {
@@ -946,7 +943,6 @@ button {
 }
 
 .gallery {
-  content-visibility: auto;
   padding: 40px 0;
   background-color: var(--section-color-grey);
 }

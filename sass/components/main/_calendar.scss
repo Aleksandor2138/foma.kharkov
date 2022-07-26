@@ -1,5 +1,4 @@
 .calendar {
-    content-visibility: auto;
     padding: 40px 0;
     &__heder{
         @include text-style($fw:800, $fs:30px, $lh:1.2, $col:#333333);
